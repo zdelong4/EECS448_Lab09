@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- name = <Your name> Date = <27/3/2020> Section = <Your Section> -->
+<html>
+<head>
+<title>WebStore</title>
+<head>
+    <link href="style.css"
+    rel="stylesheet"
+    type="text/css"/>
+</head>
+<script type="text/javascript"
+src="formChecker.js">
+</script>
+<p2>Welcome to the Rock Shop </p2>
+<form action="customerBackend.php" method="post">
+    <img src="pet1.jpg" id="display" width="200" height="200" class = "center">
+    <p>Pet Rock 1: Price $100</p>
+    <label for="pet1" >Choose a quantity:</label>
+    <select name="pet1" id="pet1" >
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    </br></br>
+    <img src="pet2.jpg" id="display" width="200" height="200" class = "center">
+    <p>Pet Rock 2: Price $190</p>
+    <label for="pet2" ></label>Choose a quantity:</label>
+    <select name="pet2" id="pet2">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    </br></br>
+    <img src="pet3.jpg" id="display" width="200" height="200" class = "center">    
+    <p>Pet Rock 3: Price $130</p>
+    <label for="pet3" >Choose a quantity:</label>
+    <select name="pet3" id="pet3" >
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    </br></br>
+    <p1>Select a shipping option:</p1><br>
+        <input type="radio" id="1a" name="ship" value="0" ><label for="1a" >Free 7 day</label></br>
+        <input type="radio" id="1b" name="ship" value="50" ><label for="1b" >$50.00 over night</label></br>
+        <input type="radio" id="1c" name="ship" value="5" ><label for="1c" >$5.00 three day</label></br>
+       
+        <label>Enter a Username: </label>
+              <input type = "text"
+                     id = "username"
+                     name= "username"
+                     value  = ""
+                     ><br>
+        <label>Enter a password: </label>
+              <input type = "text"
+                     id = "password"
+                     name= "password"
+                     value = ""
+                            ><br>
+        <input type="submit">
+    </form>
+    <button onClick="validate();">Validate Credentials</button>
+    <button onClick="window.location.reload();">Reset</button>
+</body>
